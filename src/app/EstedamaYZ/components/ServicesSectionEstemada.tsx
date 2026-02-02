@@ -10,11 +10,9 @@ const services = [
     image: "/service2-BFWroHEL.png",
   },
   {
-  
     image: "/service3-DQHDwzAG.png",
   },
   {
-   
     image: "/service4-2C9rNqBB.png",
   },
 ];
@@ -29,19 +27,19 @@ export default function ServicesSectionEstemada() {
         OUR SERVICES
       </h2>
 
-      <div className="grid md:grid-cols-2 gap-8">
+   
+      <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto justify-items-center">
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative group rounded-2xl overflow-hidden shadow-xl cursor-pointer"
+            className="relative group rounded-2xl overflow-hidden cursor-pointer"
           >
-            {/* Background Image */}
             <Image
               src={service.image}
               alt={`Service ${index + 1}`}
               width={800}
               height={500}
-              className="w-full h-[250px] md:h-[300px] object-cover transition duration-500 group-hover:scale-110"
+              className="max-w-[400px] h-[240px] object-cover transition duration-500 group-hover:scale-110"
             />   
           </div>
         ))}

@@ -16,7 +16,7 @@ export default function Footer() {
 
             {/* Logo */}
             <Image
-              src="/estedama_logo-DC65PzFo.png"
+              src="/logo_footer-Bgdss3cq.jpg"
               alt="Estedama YZ Logo"
               width={170}
               height={60}
@@ -77,37 +77,34 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-gray-500/40 my-8"></div>
+      
+        <div className="border-t border-white my-8"></div>
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300 gap-6">
 
           {/* Bottom Links */}
           <div className="flex flex-wrap items-center gap-4">
-            <Link href="#" className="hover:text-white">
+            <Link href="#">
               Terms & Conditions
             </Link>
             <span className="text-gray-500">|</span>
-            <Link href="#" className="hover:text-white">
+            <Link href="#">
               Privacy Policy
             </Link>
             <span className="text-gray-500">|</span>
-            <Link href="#" className="hover:text-white">
+            <Link href="#">
               Accessibility
             </Link>
             <span className="text-gray-500">|</span>
-            <Link href="#" className="hover:text-white">
+            <Link href="#">
               Legal
             </Link>
           </div>
 
           {/* Copyright */}
-          <div>
-            Copyright © 2024 Developed by{" "}
-            <span className="font-semibold text-white uppercase">
-              Teqneia
-            </span>
+          <div className="text-center md:text-right">
+            Copyright © 2024 Developed by <span className="font-bold  uppercase">  <Link href={"https://www.teqneia.com/?s=yz"}>Teqneia</Link>  </span>
           </div>
         </div>
       </div>

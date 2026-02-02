@@ -16,11 +16,10 @@ export default function Hero() {
         className="object-cover"
       />
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/20" />
+  
 
       {/* Navbar */}
-      <nav className=" backdrop-blur-md bg-black/30 top-0 left-0 w-full z-20">
+      <nav className=" backdrop-blur-md  top-0 left-0 w-full z-20">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
 
           {/* Logo */}
@@ -48,17 +47,17 @@ export default function Hero() {
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
 
-        <h1 className="font-mochiy text-white text-5xl md:text-7xl leading-tight">
+        <h1 className="font-mochiy text-white text-5xl md:text-7xl font-bold leading-tight">
           Building a Solid Foundation
         </h1>
 
-        <p className="mt-6 text-white text-lg md:text-2xl max-w-2xl">
+        <p className="mt-6 text-white text-lg md:text-2xl max-w-2xl font-bold">
           Your Ultimate Guide to Construction Materials.
         </p>
 
         <Link
           href="#"
-          className="mt-10 px-8 py-3 border-2 border-orange-400 text-orange-400 rounded-lg text-lg hover:bg-orange-400 hover:text-white transition duration-300"
+          className="mt-52 px-8 py-0 border-2 border-[#f39200] text-[#f39200] rounded-lg text-lg"
         >
           Contact us
         </Link>

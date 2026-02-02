@@ -26,14 +26,14 @@ export function GetInTouch() {
   <input 
     type="email" 
     placeholder="Your E-Mail" 
-    className="w-full p-2 md:p-3 rounded-md border border-gray-300 bg-white focus:ring-1 focus:ring-green-500 outline-none"
+    className="w-[300px] p-2 md:p-3  rounded-md border border-gray-300 bg-white focus:ring-1 focus:ring-black outline-none"
   />
   <textarea 
     placeholder="Write us a message" 
     rows={4}
-    className="w-full p-2 md:p-3 rounded-md border border-gray-300 bg-white focus:ring-1 focus:ring-green-500 outline-none"
+    className="w-[300px] p-2 md:p-[16px] h-52 rounded-[15px] border border-gray-300 bg-white focus:ring-1 focus:ring-black outline-none"
   ></textarea>
-  <button className="border-2 border-[#E9A426] text-[#E9A426] px-6 py-2 rounded-md font-bold hover:bg-[#E9A426] hover:text-white transition-all">
+  <button className="border-2 border-[#FFB906] text-[#FFB906] px-14 py-1 rounded-md font-bold cursor-pointer">
    Send
   </button>
 </form>

@@ -16,11 +16,10 @@ export default function HeroEstemada() {
         className="object-cover"
       />
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/20" />
+ 
 
       {/* Navbar */}
-      <nav className=" backdrop-blur-md bg-black/30 top-0 left-0 w-full z-20">
+      <nav className=" backdrop-blur-xs  top-0 left-0 w-full z-20">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
 
           {/* Logo */}
@@ -47,14 +46,12 @@ export default function HeroEstemada() {
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
 
- 
-        <p className="mt-6 text-white text-4xl md:text-7xl max-w-2xl">
-   Join The Green Side 
-        </p>
+      <h1 className="text-[50px] text-white ">Join The Green Side</h1>
+
 
         <Link
           href="#"
-          className="mt-10 px-4 py-0 border-2 border-orange-400 text-orange-400 rounded-lg backdrop-blur-xl text-lg  "
+          className="mt-3 px-4  border-2 border-[#FFB906] text-[#FFB906] rounded-lg backdrop-blur-xl text-lg  "
         >
           Get In Touch
         </Link>

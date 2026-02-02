@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WhyChooseSection() {
   return ( 
-    <section id="about us" className="bg-[#F9F7F2] py-0 px-6 md:px-12">
+    <section id="about us" className="bg-[#FEF4E5]  px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
@@ -22,9 +22,9 @@ export default function WhyChooseSection() {
 
           {/* Arched Image Container */}
           <div className="flex justify-end">
-            <div className="relative w-full max-w-[450px] aspect-[4/5] rounded-t-full overflow-hidden shadow-sm">
+            <div className="relative w-full max-w-[350px] aspect-[4/5] rounded-t-full overflow-hidden shadow-sm">
               <Image
-                src="/window2-CdDVQaQ4.png" // تأكد من مسار الصورة
+                src="/window2-CdDVQaQ4.png" 
                 alt="Construction Crane"
                 fill
                 className="object-cover"
@@ -38,7 +38,7 @@ export default function WhyChooseSection() {
 
   {/* Image */}
   <div className="flex justify-start md:order-1 order-1">
-    <div className="relative w-full max-w-[450px] aspect-[4/5] rounded-t-full overflow-hidden shadow-sm">
+    <div className="relative w-full max-w-[350px] aspect-[4/5] rounded-t-full overflow-hidden shadow-sm">
       <Image
         src="/window1-DGRJhqWG (2).png"
         alt="Construction Crane"

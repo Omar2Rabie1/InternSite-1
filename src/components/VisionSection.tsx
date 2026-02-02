@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function VisionSection() {
   return (
-    <section className="relative mb-40 mt-16">
+    <section className="relative mb-40 mt-16 ">
       
    
       <div className="relative h-[450px] w-full overflow-hidden">

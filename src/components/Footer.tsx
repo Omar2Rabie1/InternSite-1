@@ -1,6 +1,7 @@
 import { faFacebookF, faInstagram, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -20,11 +21,11 @@ export default function Footer() {
 
         {/* Primary Navigation */}
         <nav className="flex flex-wrap gap-x-8 gap-y-4 mb-8 text-lg font-medium">
-          <a href="#" className="hover:text-gray-300 transition-colors">Home</a>
-          <a href="#" className="hover:text-gray-300 transition-colors">Services</a>
-          <a href="#" className="hover:text-gray-300 transition-colors">About us</a>
-          <a href="#" className="hover:text-gray-300 transition-colors">Estedama YZ</a>
-          <a href="#" className="hover:text-gray-300 transition-colors">Contact Us</a>
+          <a href="#" className="transition-colors">Home</a>
+          <a href="#" className="transition-colors">Services</a>
+          <a href="#" className="transition-colors">About us</a>
+          <a href="#" className="transition-colors">Estedama YZ</a>
+          <a href="#" className="transition-colors">Contact Us</a>
         </nav>
 
         {/* Social Media Icons (Font Awesome) */}
@@ -64,23 +65,23 @@ export default function Footer() {
             </div>
 
         {/* Divider Line */}
-        <hr className="border-gray-500/50 mb-6" />
+        <hr className="border-white/50 mb-6" />
 
         {/* Bottom Bar: Links & Copyright */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-300">
+        <div className="flex flex-col mb-7 md:flex-row justify-between items-center gap-6 text-sm text-gray-300">
           
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
-            <a href="#" className="hover:text-white">Terms & Conditions</a>
+            <a href="#">Terms & Conditions</a>
             <span className="hidden md:inline text-gray-500">|</span>
-            <a href="#" className="hover:text-white">Privacy Policy</a>
+            <a href="#">Privacy Policy</a>
             <span className="hidden md:inline text-gray-500">|</span>
-            <a href="#" className="hover:text-white">Accessibility</a>
+            <a href="#">Accessibility</a>
             <span className="hidden md:inline text-gray-500">|</span>
-            <a href="#" className="hover:text-white">Legal</a>
+            <a href="#">Legal</a>
           </div>
 
           <div className="text-center md:text-right">
-            Copyright © 2024 Developed by <span className="font-bold text-white uppercase">Teqneia</span>
+            Copyright © 2024 Developed by <span className="font-bold  uppercase">  <Link href={"https://www.teqneia.com/?s=yz"}>Teqneia</Link>  </span>
           </div>
         </div>
 
