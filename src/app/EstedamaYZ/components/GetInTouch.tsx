@@ -1,105 +1,130 @@
-"use client"; 
+"use client";
 
-import { Mail, MapPin, Phone } from "lucide-react"; 
-import Image from "next/image";
-
-// Font Awesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faInstagram,
-  faLinkedinIn,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export function GetInTouch() {
   return (
-    <section id="Contact Us" className="bg-white py-20 px-6">
-      <div className="max-w-2xl mx-auto relative">
+    <section className="py-16 px-6 bg-[#E6EFD9]">
 
-        <div className="bg-[#739882] rounded-xl p-8 md:p-16 ml-0 md:ml-32 min-h-[400px] flex flex-col items-center md:items-start justify-center">
-          <div className="md:pl-20 w-full max-w-lg">
-            <h2 className="text-2xl font-bold text-black mb-1">Get In Touch</h2>
-            <p className="text-gray-700 mb-6">feel free to drop us a line below</p>
-            
-       <form className="space-y-4">
-  <input 
-    type="email" 
-    placeholder="Your E-Mail" 
-    className="w-[300px] p-2 md:p-3  rounded-md border border-gray-300 bg-white focus:ring-1 focus:ring-black outline-none"
-  />
-  <textarea 
-    placeholder="Write us a message" 
-    rows={4}
-    className="w-[300px] p-2 md:p-[16px] h-52 rounded-[15px] border border-gray-300 bg-white focus:ring-1 focus:ring-black outline-none"
-  ></textarea>
-  <button className="border-2 border-[#FFB906] text-[#FFB906] px-14 py-1 rounded-md font-bold cursor-pointer">
-   Send
-  </button>
-</form>
+      {/* MOBILE + TABLET */}
+      <div className="md:hidden">
+        <div className="grid grid-cols-2 gap-8 items-start">
 
+          {/* Left - Form */}
+          <div className="bg-[#739882] rounded-2xl p-6 w-[110%]">
+
+            <h2 className="text-2xl font-bold text-white mb-2">
+              Get In Touch
+            </h2>
+
+            <p className="text-white mb-6 text-sm">
+              Feel free to drop us a line below
+            </p>
+
+            <form className="space-y-5">
+              <input
+                type="email"
+                placeholder="Your E-Mail"
+                className="w-full h-[55px] px-5 rounded-3xl bg-white outline-none text-sm"
+              />
+
+              <textarea
+                placeholder="Write us a message"
+                rows={6}
+                className="w-full px-5 py-4 rounded-3xl bg-white outline-none text-sm resize-none"
+              />
+
+              <button className="border-2 border-[#FFB906] text-[#FFB906] px-10 py-2 rounded-xl font-bold">
+                Send
+              </button>
+            </form>
           </div>
-        </div>
 
-   
-        <div className="absolute top-1/2 md:top-1/2 -left-16 -translate-y-1/2 w-full md:w-[240px] bg-[#D6E0C4] border border-black rounded-xl p-8 shadow-xl hidden md:block">
-          <h3 className="text-xl font-bold text-center mb-8">Contact Us</h3>
-          
-          <div className="space-y-6">
+          {/* Right - Contact Info */}
+          <div className="pt-16 space-y-12">
             <div className="flex items-start gap-4">
-              <MapPin className="text-[#739882] w-5 h-5 shrink-0 mt-1" />
-              <p className="text-sm">81 Mohamed Mekled St. Nasr City 8th Zone, Cairo, Egypt</p>
+              <MapPin className="text-[#739882] w-6 h-6 mt-1" />
+              <p className="text-sm leading-relaxed">
+                81 Mohamed Mekled St. <br />
+                Nasr City 8th Zone, <br />
+                Cairo, Egypt
+              </p>
             </div>
+
             <div className="flex items-center gap-4">
-              <Phone className="text-[#739882] w-5 h-5" />
+              <Phone className="text-[#739882] w-6 h-6" />
               <p className="text-sm">+201123897507</p>
             </div>
+
             <div className="flex items-center gap-4">
-              <Mail className="text-[#739882] w-5 h-5" />
+              <Mail className="text-[#739882] w-6 h-6" />
               <p className="text-sm">info@YZgroup.co</p>
             </div>
           </div>
 
-          <div className="mt-8 text-center">
-            <p className="text-sm mb-3">or contact us via:</p>
-            <div className="flex justify-center gap-3">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 bg-blue-600 text-white rounded-md flex items-center justify-center hover:scale-110 transition-transform"
-              >
-                <FontAwesomeIcon icon={faFacebookF} />
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 bg-pink-500 text-white rounded-md flex items-center justify-center hover:scale-110 transition-transform"
-              >
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 bg-blue-700 text-white rounded-md flex items-center justify-center hover:scale-110 transition-transform"
-              >
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </a>
-              <a
-                href="https://wa.me/201123897507"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 bg-green-500 text-white rounded-md flex items-center justify-center hover:scale-110 transition-transform"
-              >
-                <FontAwesomeIcon icon={faWhatsapp} />
-              </a>
-            </div>
-          </div>
         </div>
       </div>
 
+      {/* DESKTOP */}
+      <div className="hidden md:block">
+        <div className="max-w-4xl mx-auto relative">
+
+          {/* وسّعنا البوكس هنا */}
+          <div className="bg-[#739882] rounded-2xl p-16 ml-40 min-h-[420px] flex flex-col justify-center w-[650px]">
+
+            <div className="pl-24 w-full">
+              <h2 className="text-3xl font-bold text-white mb-2">
+                Get In Touch
+              </h2>
+
+              <p className="text-white mb-8">
+                Feel free to drop us a line below
+              </p>
+
+              <form className="space-y-5">
+                <input
+                  type="email"
+                  placeholder="Your E-Mail"
+                  className="w-full p-3 rounded-3xl bg-white outline-none"
+                />
+                <textarea
+                  placeholder="Write us a message"
+                  rows={5}
+                  className="w-full p-5 h-44 rounded-3xl bg-white outline-none"
+                ></textarea>
+                <button className="border-2 border-[#FFB906] text-[#FFB906] px-16 py-2 rounded-xl font-bold">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+
+          {/* Side Card */}
+          <div className="absolute top-1/2 -left-20 -translate-y-1/2 w-[260px] bg-[#D6E0C4] border border-black rounded-2xl p-8 shadow-xl">
+            <h3 className="text-xl font-bold text-center mb-8">
+              Contact Us
+            </h3>
+
+            <div className="space-y-8">
+              <div className="flex items-start gap-4">
+                <MapPin className="text-[#739882] w-5 h-5 mt-1" />
+                <p className="text-sm">
+                  81 Mohamed Mekled St. Nasr City 8th Zone, Cairo, Egypt
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Phone className="text-[#739882] w-5 h-5" />
+                <p className="text-sm">+201123897507</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Mail className="text-[#739882] w-5 h-5" />
+                <p className="text-sm">info@YZgroup.co</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
     </section>
   );

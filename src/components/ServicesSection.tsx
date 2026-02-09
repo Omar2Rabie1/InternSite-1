@@ -1,44 +1,44 @@
 import Image from "next/image";
-  import { Mochiy_Pop_One } from "next/font/google";
+import { Mochiy_Pop_One } from "next/font/google";
 
-  const mochiy = Mochiy_Pop_One({
+const mochiy = Mochiy_Pop_One({
   subsets: ["latin"],
   weight: ["400"],
 });
-export default function ServicesSection() {
 
+export default function ServicesSection() {
   return (
     <section id="service" className="py-20 bg-[#EFF5E9]">
-      <div className="max-w-6xl mx-auto px-24 container">
+      <div className="max-w-7xl mx-auto px-4 md:px-16">
 
-        <h2 className="text-center text-4xl md:text-5xl font-mochiy text-[#0E3B34] mb-16">
+        {/* Title */}
+        <h2
+          className={`text-center text-3xl md:text-5xl ${mochiy.className} text-[#0E3B34] mb-20`}
+        >
           OUR SERVICES
         </h2>
 
-        <div className="space-y-28 relative">
+        <div className="space-y-24">
 
-          {/* MEP DESIGN */}
-          <div className="relative flex justify-center">
-            <div className="absolute top-1/2 -translate-y-1/4 left-0 hidden md:block">
-              <div className="relative w-32 h-32 rounded-full overflow-hidden">
-                <Image
-                  src="/mep-design-CufIJCrC.png"
-                  alt="MEP DESIGN"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+          {/* 1️⃣ MEP DESIGN */}
+          <div className="flex flex-row items-start gap-6 md:gap-16">
+            <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-44 md:h-44 shrink-0">
+              <Image
+                src="/mep-design-CufIJCrC.png"
+                alt="MEP DESIGN"
+                fill
+                className="object-cover rounded-full"
+              />
             </div>
 
-            <div className="max-w-xl -ms-16">
- <h3 className={`text-xl md:text-2xl font-bold ${mochiy.className} text-[#0E3B34] mb-2`}>        
+            <div className="flex-1">
+              <h3 className={`text-xl md:text-3xl font-bold ${mochiy.className} text-[#0E3B34] mb-4`}>
                 MEP DESIGN
               </h3>
               <ul className="space-y-3">
-                <li className="flex justify-center gap-1 text-sm">
-                  <span className="mt-2  w-2 h-2 bg-black rounded-full"></span>
-
-                  <span>
+                <li className="flex items-start gap-3 text-sm md:text-lg leading-relaxed">
+                  <span className="mt-2 w-2.5 h-2.5  bg-black rounded-full shrink-0"></span>
+                  <span className="mx-auto">
                     MEP design work for buildings & infrastructure with the top-notch quality and according to the latest innovative techniques in accordance to the global codes.
                   </span>
                 </li>
@@ -46,33 +46,31 @@ export default function ServicesSection() {
             </div>
           </div>
 
-          {/* DESIGN REVIEW */}
-          <div className="relative flex justify-center">
-            <div className="absolute top-1/2 -translate-y-1/4 right-0 hidden md:block">
-              <div className="relative w-32 h-32 rounded-full overflow-hidden">
-                <Image
-                  src="/design-review-CYR9KcCT.png"
-                  alt="DESIGN REVIEW"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+          {/* 2️⃣ DESIGN REVIEW */}
+          <div className="flex flex-row-reverse items-start gap-6 md:gap-16">
+            <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-44 md:h-44 shrink-0">
+              <Image
+                src="/design-review-CYR9KcCT.png"
+                alt="DESIGN REVIEW"
+                fill
+                className="object-cover rounded-full"
+              />
             </div>
 
-            <div className="max-w-xl -ms-16">
- <h3 className={`text-xl md:text-2xl font-bold ${mochiy.className} text-[#0E3B34] mb-2`}>
+            <div className="flex-1 mx-auto">
+              <h3 className={`text-xl md:text-3xl font-bold ${mochiy.className} text-[#0E3B34] mb-4`}>
                 DESIGN REVIEW
               </h3>
               <ul className="space-y-3">
-                <li className="flex justify-center gap-1 text-sm">
-                  <span className="mt-2 -ms-14 w-2 h-2 bg-black rounded-full"></span>
-                  <span>
+                <li className="flex items-start gap-3 text-sm md:text-lg leading-relaxed">
+                  <span className="mt-2 w-2.5 h-2.5 bg-black rounded-full shrink-0"></span>
+                  <span >
                     Design review in neat details for verification of MEP systems prior to tender stage.
                   </span>
                 </li>
-                <li className="flex justify-center gap-1 text-sm">
-                  <span className="mt-2 w-2 h-2 bg-black rounded-full"></span>
-                  <span>
+                <li className="flex items-start gap-3 text-sm md:text-lg leading-relaxed">
+                  <span className="mt-2 w-2.5 h-2.5 bg-black rounded-full shrink-0"></span>
+                  <span >
                     Design review prior to the construction stage for the verification to the client requirement against the delivered design packages by the design firms.
                   </span>
                 </li>
@@ -80,62 +78,56 @@ export default function ServicesSection() {
             </div>
           </div>
 
-          {/* SHOP DRAWING */}
-          <div className="relative flex justify-center">
-            <div className="absolute top-1/2 -translate-y-1/4 left-0 hidden md:block">
-              <div className="relative w-32 h-32 rounded-full overflow-hidden">
-                <Image
-                  src="/shop-drawing-CsPdZ061.png"
-                  alt="SHOP DRAWING"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+          {/* 3️⃣ SHOP DRAWING */}
+          <div className="flex flex-row items-start gap-6 md:gap-16">
+            <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-44 md:h-44 shrink-0">
+              <Image
+                src="/shop-drawing-CsPdZ061.png"
+                alt="SHOP DRAWING"
+                fill
+                className="object-cover rounded-full"
+              />
             </div>
 
-            <div className="max-w-xl -ms-72">
-             <h3 className={`text-xl md:text-2xl font-bold ${mochiy.className} text-[#0E3B34] mb-2`}>
+            <div className="flex-1 mx-auto">
+              <h3 className={`text-xl md:text-3xl font-bold ${mochiy.className} text-[#0E3B34] mb-4`}>
                 SHOP DRAWING
               </h3>
               <ul className="space-y-3">
-                <li className="flex justify-center gap-1 text-sm">
-                  <span className="mt-2 w-2 h-2 bg-black rounded-full"></span>
+                <li className="flex items-start gap-3 text-sm md:text-lg leading-relaxed">
+                  <span className="mt-2 w-2.5 h-2.5 bg-black rounded-full shrink-0"></span>
                   <span>Shop drawing 2D CAD enriched with installation details.</span>
                 </li>
-                <li className="flex justify-center gap-1 text-sm">
-                  <span className="mt-2 -ms-[110px] w-2 h-2 bg-black rounded-full"></span>
+                <li className="flex items-start gap-3 text-sm md:text-lg leading-relaxed">
+                  <span className="mt-2 w-2.5 h-2.5 bg-black rounded-full shrink-0"></span>
                   <span>Shop drawing 3D Revit with LOD 450.</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* BIM MODELING */}
-          <div className="relative flex justify-center -ms-24">
-            <div className="absolute top-1/2 -translate-y-1/4 right-0 hidden md:block">
-              <div className="relative w-32 h-32 rounded-full overflow-hidden">
-                <Image
-                  src="/bim-modeling-DlxwX07w.png"
-                  alt="BIM MODELING"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+          {/* 4️⃣ BIM MODELING */}
+          <div className="flex flex-row-reverse items-start gap-6 md:gap-16">
+            <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-44 md:h-44 shrink-0">
+              <Image
+                src="/bim-modeling-DlxwX07w.png"
+                alt="BIM MODELING"
+                fill
+                className="object-cover rounded-full"
+              />
             </div>
 
-            <div className="max-w-xl -ms-16">
-            <h3 className={`text-xl md:text-2xl font-bold ${mochiy.className} text-[#0E3B34] mb-2`}>
+            <div className="flex-1">
+              <h3 className={`text-xl md:text-3xl font-bold ${mochiy.className} text-[#0E3B34] mb-4`}>
                 BIM MODELING
               </h3>
               <ul className="space-y-3">
-                <li className="flex justify-center gap-1 text-sm -ms-[185px]">
-                  <span className="mt-2 w-2 h-2 bg-black rounded-full"></span>
-                  <span>
-                    BIM modeling for all buildings & infra disciplines.
-                  </span>
+                <li className="flex items-start gap-3 text-sm md:text-lg leading-relaxed">
+                  <span className="mt-2 w-2.5 h-2.5 bg-black rounded-full shrink-0"></span>
+                  <span>BIM modeling for all buildings & infra disciplines.</span>
                 </li>
-                <li className="flex justify-center gap-1 text-sm">
-                  <span className="mt-2 w-2 h-2 bg-black rounded-full"></span>
+                <li className="flex items-start gap-3 text-sm md:text-lg leading-relaxed">
+                  <span className="mt-2 w-2.5 h-2.5 bg-black rounded-full shrink-0"></span>
                   <span>
                     Presentations to client prior to construction with zero clash and up to LOD 500.
                   </span>
@@ -143,30 +135,29 @@ export default function ServicesSection() {
               </ul>
             </div>
           </div>
-               {/* SHOP DRAWING */}
-          <div className="relative flex justify-center">
-            <div className="absolute top-1/2 -translate-y-1/4 left-0 hidden md:block">
-              <div className="relative w-32 h-32 rounded-full overflow-hidden">
-                <Image
-                  src="/3d-rendering-ETiVv9fk.png"
-                  alt="SHOP DRAWING"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+
+          {/* 5️⃣ 3D Rendering */}
+          <div className="flex flex-row items-start gap-6 md:gap-16">
+            <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-44 md:h-44 shrink-0">
+              <Image
+                src="/3d-rendering-ETiVv9fk.png"
+                alt="3D Rendering"
+                fill
+                className="object-cover rounded-full"
+              />
             </div>
 
-            <div className="max-w-xl -ms-64">
-              <h3 className={`text-xl md:text-2xl font-bold ${mochiy.className} text-[#0E3B34] mb-2`}>
-              3D Rendering
+            <div className="flex-1">
+              <h3 className={`text-xl md:text-3xl font-bold ${mochiy.className} text-[#0E3B34] mb-4`}>
+                3D Rendering
               </h3>
               <ul className="space-y-3">
-                <li className="flex justify-center gap-1 text-sm">
-                  <span className="mt-2 w-2 h-2 bg-black rounded-full"></span>
-                  <span>3D rendering work for buildings interior & exterior using 3D Max.
-</span>
+                <li className="flex items-start gap-3 text-sm md:text-lg leading-relaxed">
+                  <span className="mt-2 w-2.5 h-2.5 bg-black rounded-full shrink-0"></span>
+                  <span>
+                    3D rendering work for buildings interior & exterior using 3D Max.
+                  </span>
                 </li>
-             
               </ul>
             </div>
           </div>
