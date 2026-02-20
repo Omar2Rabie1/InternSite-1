@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function VisionSection() {
   return (
-    /* أضفنا overflow-visible للسكشن عشان البوكس يقدر يخرج براه لتحت */
+  
     <section className="relative h-[450px] flex items-center justify-center overflow-visible mb-32">
 
-      {/* Background with darker overlay */}
+   
       <div className="absolute inset-0 -z-10">
         <Image
           src="/vision_background-CINrixyI.jpg" 
@@ -16,8 +16,7 @@ export default function VisionSection() {
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
-      {/* The White Box */}
-      {/* max-w-4xl لتقليل العرض | translate-y-1/2 لنزوله لنصف المسافة تحت */}
+    
       <div className="relative max-w-4xl w-full bg-white border-[2px] border-black p-10 md:p-14 shadow-xl translate-y-[40%]">
         
         {/* Title */}
