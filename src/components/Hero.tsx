@@ -21,20 +21,20 @@ export default function Hero() {
       />
 
       {/* Navbar */}
-      <nav className="absolute top-0 left-0 w-full z-20 backdrop-blur-md">
+      <nav className="absolute top-0 left-0 w-full z-20 backdrop-blur-md ">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
 
           {/* Logo */}
           <Image
             src="/logo_yz_2-PfnMos6e.png"
             alt="YZ Group Logo"
-            width={120}
+            width={150}
             height={60}
             priority
           />
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex gap-10 text-white text-lg font-medium">
+          <ul className="hidden md:flex gap-13 text-white text-2xl font-medium">
             <li className="hover:text-orange-400 transition">
               <Link href="#">Home</Link>
             </li>
@@ -91,19 +91,19 @@ export default function Hero() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-6">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-6 ">
 
-        <h1 className="text-white text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+        <h1 className="text-white text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mt-56">
           Building a Solid Foundation
         </h1>
 
-        <p className="mt-6 text-white text-base sm:text-lg md:text-2xl max-w-2xl font-medium">
+        <p className="mt-6 text-white text-base sm:text-lg md:text-2xl max-w-2xl font-medium mt-9">
           Your Ultimate Guide to Construction Materials.
         </p>
 
         <Link
           href="#contact"
-          className="mt-60 px-8 py-0 border-2 border-[#f39200] text-[#f39200] rounded-lg text-lg "
+          className="mt-20 px-13 py-1 border-2 bg-black border-[#f39200] text-[#f39200] rounded-lg text-lg "
         >
           Contact Us
         </Link>
