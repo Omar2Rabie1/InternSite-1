@@ -17,13 +17,11 @@ export function ContactAndAcademy() {
     <section id="Contact Us" className="bg-white py-20 px-4 md:px-6">
       <div className="mx-auto relative max-w-2xl md:max-w-2xl">
 
-        {/* =========================
-            MOBILE/TABLET (SMALL) => LIKE IMAGE
-            ========================= */}
+  
         <div className="md:hidden bg-[#E6EFD9] py-10 px-4">
           <div className="grid grid-cols-2 gap-6 items-start">
 
-            {/* Left: Form */}
+     
             <div>
               <h2 className="text-2xl font-bold mb-1">Get In Touch</h2>
               <p className="text-sm mb-6">Feel free to drop us a line below</p>
@@ -75,9 +73,7 @@ export function ContactAndAcademy() {
           </div>
         </div>
 
-        {/* =========================
-            DESKTOP (MD+) => YOUR CURRENT DESIGN
-            ========================= */}
+       
         <div className="hidden md:block">
           <div className="bg-[#E2EAD6] rounded-xl p-8 md:p-16 ml-0 md:ml-32 min-h-[400px] flex flex-col items-center md:items-start justify-center">
             <div className="md:pl-20 w-full max-w-lg">
@@ -167,7 +163,7 @@ export function ContactAndAcademy() {
 
       </div>
 
-      {/* ===== Academy Section (same as yours) ===== */}
+
       <div className="mt-32 text-center">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mb-6">
           <span className="text-2xl font-medium tracking-[0.2em]">YZ ACADEMY</span>
