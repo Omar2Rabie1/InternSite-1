@@ -50,7 +50,7 @@ export default function HeroEstemada() {
           </button>
         </div>
 
-        {/* Dropdown Menu بنفس تنسيقاتك */}
+      
         <div
           className={`md:hidden absolute top-[67px] right-0 
           w-[40vw] min-w-[220px]
