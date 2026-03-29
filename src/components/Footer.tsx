@@ -8,10 +8,10 @@ export default function Footer() {
     <footer className="bg-[#0D352E] text-white pt-12 pb-6 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         
-        {/* Logo Section */}
+       
         <div className="mb-8">
           <Image 
-            src="/logo_yz_2-PfnMos6e.png" // تأكد من وضع شعار YZ Group هنا
+            src="/logo_yz_2-PfnMos6e.png" هنا
             alt="YZ Group Logo" 
             width={180} 
             height={60} 
@@ -19,7 +19,7 @@ export default function Footer() {
           />
         </div>
 
-        {/* Primary Navigation */}
+    
         <nav className="flex flex-wrap gap-x-8 gap-y-4 mb-8 text-lg font-medium">
           <a href="#" className="transition-colors">Home</a>
           <a href="#" className="transition-colors">Services</a>
@@ -28,7 +28,7 @@ export default function Footer() {
           <a href="#" className="transition-colors">Contact Us</a>
         </nav>
 
-        {/* Social Media Icons (Font Awesome) */}
+     
            <div className="flex mb-4 gap-3">
               <a
                 href="https://www.facebook.com/"
@@ -64,10 +64,9 @@ export default function Footer() {
               </a>
             </div>
 
-        {/* Divider Line */}
         <hr className="border-white/50 mb-6" />
 
-        {/* Bottom Bar: Links & Copyright */}
+
         <div className="flex flex-col mb-7 md:flex-row justify-between items-center gap-6 text-sm text-gray-300">
           
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
