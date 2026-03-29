@@ -13,7 +13,7 @@ export default function EstemadaVisionSection() {
         className="object-cover"
       />
 
-      {/* Overlay خفيف عشان النص يبان */}
+    
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
