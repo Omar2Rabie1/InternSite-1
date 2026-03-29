@@ -69,7 +69,7 @@ export function GetInTouch() {
       <div className="hidden md:block">
         <div className="max-w-4xl mx-auto relative">
 
-          {/* وسّعنا البوكس هنا */}
+       
           <div className="bg-[#739882] rounded-2xl p-16 ml-40 min-h-[420px] flex flex-col justify-center w-[650px]">
 
             <div className="pl-24 w-full">
